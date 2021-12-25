@@ -15,15 +15,15 @@ public class Conta {
     /**
      * Número da conta
      */
-    public int numero;
+    private int numero;
     /**
      * Número da agência
      */
-    public int agencia;
+    private int agencia;
     /**
      * Saldo da conta
      */
-    public double saldo;
+    private double saldo;
     
     /* Contrutores
     *da classe Conta
@@ -64,11 +64,23 @@ public class Conta {
         saldo -= valor;
     }
     
-    /**
-     * Verifica o saldo da conta
-     * @return Valor do saldo da conta
-     */
-    public double verificarSaldo(){
+    public int getNumero() {
+        return numero;
+    }
+    
+    public void setNumero(int numero) {
+        this.numero = numero;
+    }
+    
+    public int getAgencia() {
+        return agencia;
+    }
+    
+    public void setAgencia (int agencia) {
+        this.agencia = agencia;
+    }
+
+    public double getSaldo(){
         return saldo;
     }
     

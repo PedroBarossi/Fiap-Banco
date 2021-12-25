@@ -16,13 +16,20 @@ public class FiapBanco {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Conta cc = new Conta(1, 12, 100);
+        Conta cc = new Conta();
         cc.depositar(50);
-        System.out.println(cc.verificarSaldo());
+        cc.setAgencia(123);
+        cc.setNumero(321);
         
-        Conta poupanca = new Conta(2, 12, 1000);
+        cc.depositar(100);
+        
+        System.out.println(cc.getSaldo());
+        
+        Conta poupanca = new Conta(111, 222, 1000);
+        
         poupanca.retirar(100);
-        System.out.println(poupanca.verificarSaldo());
+        
+        System.out.println(poupanca.getSaldo());
     }
     
 }
