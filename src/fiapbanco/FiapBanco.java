@@ -15,8 +15,8 @@ public class FiapBanco {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-        Conta cc = new Conta();
+        
+        /*Conta cc = new Conta();
         cc.depositar(50);
         cc.setAgencia(123);
         cc.setNumero(321);
@@ -29,7 +29,23 @@ public class FiapBanco {
         
         poupanca.retirar(100);
         
-        System.out.println(poupanca.getSaldo());
+        System.out.println(poupanca.getSaldo());*/
+        
+        Conta conta1 = new Conta();
+        conta1.depositar(1000);
+        conta1.retirar(500);
+        
+        ContaCorrente conta2 = new ContaCorrente();
+        conta2.depositar(1000);
+        conta2.retirar(500);
+        
+        Conta conta3 = new ContaCorrente();
+        conta3.depositar(1000);
+        conta3.retirar(100);
+        
+        System.out.println("Conta1: " + conta1.getSaldo());
+        System.out.println("Conta2: " + conta2.getSaldo());
+        System.out.println("Conta3: " + conta3.getSaldo());
     }
     
 }
